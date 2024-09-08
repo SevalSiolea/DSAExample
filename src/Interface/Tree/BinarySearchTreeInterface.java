@@ -1,6 +1,6 @@
 package Interface.Tree;
 
-public interface BinarySearchTree<AnyType extends Comparable<? super AnyType>> {
+public interface BinarySearchTreeInterface<AnyType extends Comparable<? super AnyType>> {
 
 
     /*-------------------------------------------------------------------------------*/
