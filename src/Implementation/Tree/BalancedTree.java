@@ -102,9 +102,11 @@ public class BalancedTree<AnyType extends Comparable<? super AnyType>>
                 if( this.removeRight ) {
                     node.element = findMin( node.right );
                     node.right = remove( node.right, node.element );
+                    this.removeRight = false;
                 } else {
                     node.element = findMax( node.left );
                     node.left = remove( node.left, node.element );
+                    this.removeRight = true;
                 }
             else
                 node = node.left != null ? node.left : node.right;
